@@ -33,14 +33,14 @@ const MIDDLE_PRICE = (TOTAL_PRICE / 3).toFixed(2);
 console.log("Середня ціна:", MIDDLE_PRICE);
 
 
-const DISCOUNT = Math.random()*100;
+const DISCOUNT = Math.random()*50;
 console.log("Випадкова знижка:", Math.round(DISCOUNT), "грн.");
 
 
 const PRICE_WITH_DISCOUNT = (TOTAL_PRICE).toFixed(2) - Math.round(DISCOUNT);
 console.log("Сума з урахуванням знижки:", PRICE_WITH_DISCOUNT);
 
-const INCOME = (TOTAL_PRICE).toFixed(2) / 2 - ((TOTAL_PRICE).toFixed(2) - Math.round(DISCOUNT));
+const INCOME = (TOTAL_PRICE).toFixed(2) / 2 - Math.round(DISCOUNT);
 console.log("Чистий прибуток:", INCOME);
 
 
