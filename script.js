@@ -34,7 +34,8 @@ console.log("Середня ціна:", MIDDLE_PRICE);
 
 
 const DISCOUNT = Math.random()*100;
-console.log("Випадкова знижка:", Math.round(DISCOUNT),"грн.");
+console.log("Випадкова знижка:", Math.round(DISCOUNT), "грн.");
+
 
 const PRICE_WITH_DISCOUNT = (TOTAL_PRICE).toFixed(2) - Math.round(DISCOUNT);
 console.log("Сума з урахуванням знижки:", PRICE_WITH_DISCOUNT);
