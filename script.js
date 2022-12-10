@@ -62,7 +62,7 @@ document.writeln("Решта з 500: ", CHANGE);
 document.writeln("<br>")
 document.writeln("Середня ціна: ", MIDDLE_PRICE);
 document.writeln("<br>")
-document.writeln("Випадкова знижка: ", Math.round(DISCOUNT) + "%");
+document.writeln("Випадкова знижка: ", Math.round(DISCOUNT), "грн.");
 document.writeln("<br>")
 document.writeln("Сума з урахуванням знижки: ", PRICE_WITH_DISCOUNT);
 document.writeln("<br>")
