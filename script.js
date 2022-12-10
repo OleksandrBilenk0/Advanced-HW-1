@@ -34,12 +34,12 @@ console.log("Середня ціна:", MIDDLE_PRICE);
 
 
 const DISCOUNT = Math.random()*100;
-console.log("Випадкова знижка:", Math.round(DISCOUNT) + "%");
+console.log("Випадкова знижка:", Math.round(DISCOUNT),"грн.");
 
-const PRICE_WITH_DISCOUNT = ((TOTAL_PRICE * DISCOUNT) / 100).toFixed(2);
+const PRICE_WITH_DISCOUNT = (TOTAL_PRICE).toFixed(2) - Math.round(DISCOUNT);
 console.log("Сума з урахуванням знижки:", PRICE_WITH_DISCOUNT);
 
-const INCOME = TOTAL_PRICE / 2 - (TOTAL_PRICE - PRICE_WITH_DISCOUNT);
+const INCOME = (TOTAL_PRICE).toFixed(2) / 2 - ((TOTAL_PRICE).toFixed(2) - Math.round(DISCOUNT));
 console.log("Чистий прибуток:", INCOME);
 
 
@@ -52,6 +52,8 @@ document.writeln("<br>")
 document.writeln("Загальна сума: ", TOTAL_PRICE);
 document.writeln("<br>")
 document.writeln("Без копійок: ", WHOLE_NUMBERS);
+document.writeln("<br>")
+document.writeln("Округлено до сотень:", AMOUNT_ROUNDED_TO_HUNDREDS);
 document.writeln("<br>")
 document.writeln("Не парне число: ", false);
 document.writeln("<br>")
